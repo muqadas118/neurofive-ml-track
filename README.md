@@ -65,6 +65,19 @@ The goal of this project is to predict whether a passenger survived the Titanic 
 
 The model correctly classified most passengers and achieved over 80% accuracy on the test dataset.
 
+## Task 4 – House Price Prediction using Linear Regression
+
+* Used California Housing Dataset
+* Selected important housing features
+* Trained a Linear Regression model
+* Evaluated performance using RMSE and R² Score
+* Visualized Actual vs Predicted Prices
+
+## Results:
+
+RMSE: 0.81
+R² Score: 0.499
+
 ## Technologies Used
 
 * Python
