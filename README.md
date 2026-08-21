@@ -99,6 +99,42 @@ Through this project, I learned:
 * Classification using Logistic Regression
 * Model evaluation using accuracy score and confusion matrix
 
+## Task 8 – Ensemble Learning
+
+For this task, I compared ensemble models with the earlier Logistic Regression model for customer churn prediction.
+
+### Models Compared
+
+| Model | Accuracy |
+|---|---:|
+| Logistic Regression | 72.57% |
+| Random Forest | 75.41% |
+| XGBoost | 79.32% |
+
+### Feature Importance
+
+Random Forest and XGBoost were also used to identify the most important churn-related features.
+
+**Random Forest top features:**
+1. Contract - Month-to-month
+2. Tenure
+3. TenureYears
+
+**XGBoost top features:**
+1. Contract - Month-to-month
+2. InternetService - Fiber optic
+3. OnlineSecurity - No
+
+Both ensemble models identified month-to-month contracts as an important churn factor.
+
+### How Random Forest and XGBoost Differ
+
+Random Forest builds many decision trees independently and combines their predictions to reduce variance and improve stability. XGBoost builds trees sequentially, with each new tree focusing on errors made by previous trees. Because of this boosting approach, XGBoost can learn more complex patterns. In this task, XGBoost achieved the highest accuracy among the three models.
+
+### Result
+
+XGBoost performed best with an accuracy of **79.32%**, followed by Random Forest at **75.41%** and Logistic Regression at **72.57%**.
+
 ## Author
 
 Muqadas Rehman
