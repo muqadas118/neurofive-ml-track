@@ -135,6 +135,20 @@ Random Forest builds many decision trees independently and combines their predic
 
 XGBoost performed best with an accuracy of **79.32%**, followed by Random Forest at **75.41%** and Logistic Regression at **72.57%**.
 
+## Task 9 – Handling Imbalanced Data
+
+The Telco Customer Churn dataset contains more non-churn customers than churn customers, making it an imbalanced classification problem.
+
+To address this, I trained a Logistic Regression model using `class_weight="balanced"` and compared it with the original unbalanced model.
+
+| Metric | Before | After Balanced |
+|---|---:|---:|
+| Precision | 64.8% | 49.0% |
+| Recall | 57.2% | 79.7% |
+| F1-Score | 60.8% | 60.7% |
+
+The balanced model significantly improved recall for churn customers, meaning it was able to identify more customers who were likely to leave. However, precision decreased because the model produced more false positive churn predictions. This shows why accuracy alone can be misleading for imbalanced datasets.
+
 ## Author
 
 Muqadas Rehman
